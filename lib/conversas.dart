@@ -13,14 +13,42 @@ class Conversas extends StatelessWidget {
           title: Text("Grupo da família"),
           subtitle: Text("Oi..."),
           leading: CircleAvatar(
+            radius: 25,
             backgroundImage: NetworkImage(
                 "https://images.unsplash.com/photo-1682534301949-136d3162dc55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"),
           ),
-          trailing: Text("13:49"),
+          onTap: () {},
+          trailing: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "11:49",
+                style: TextStyle(
+                  color: Colors.green,
+                ),
+              ),
+              SizedBox(height: 5),
+              CircleAvatar(
+                backgroundColor: Colors.green,
+                radius: 12,
+                child: Text("2"),
+              ),
+            ],
+          ),
         ),
         ListTile(
           title: Text("Fulaninho"),
-          subtitle: Text("Blz?"),
+          subtitle: Row(
+            children: [
+              Icon(
+                Icons.done_all,
+                size: 18,
+                color: Colors.blue,
+              ),
+              SizedBox(width: 6),
+              Text('Blz?'),
+            ],
+          ),
           leading: Icon(Icons.account_circle, size: 48),
           trailing: Text("13:00"),
         ),

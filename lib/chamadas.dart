@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class Chamadas extends StatelessWidget {
@@ -7,7 +9,7 @@ class Chamadas extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      child: Text("Página de Chamadas"),
+      child: Icon(Icons.call_made),
     );
   }
 }
